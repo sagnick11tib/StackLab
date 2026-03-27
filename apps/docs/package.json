@@ -1,0 +1,12 @@
+{
+  "name": "@stacklab/docs",
+  "private": true,
+  "scripts": {
+    "dev": "mint dev --port 3333 --no-open",
+    "build": "mint validate",
+    "check-links": "mint broken-links"
+  },
+  "devDependencies": {
+    "mint": "latest"
+  }
+}

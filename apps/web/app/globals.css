@@ -1,0 +1,47 @@
+@import "@stacklab/design-tokens/index.css";
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --font-sans: var(--sl-font-sans);
+  --font-mono: var(--sl-font-mono);
+
+  --color-background: var(--sl-color-background);
+  --color-foreground: var(--sl-color-foreground);
+  --color-foreground-soft: var(--sl-color-foreground-soft);
+  --color-foreground-muted: var(--sl-color-foreground-muted);
+  --color-surface: var(--sl-color-surface);
+  --color-surface-muted: var(--sl-color-surface-muted);
+  --color-border: var(--sl-color-border);
+  --color-accent: var(--sl-color-accent);
+  --color-accent-soft: var(--sl-color-accent-soft);
+  --color-signal: var(--sl-color-signal);
+  --color-danger: var(--sl-color-danger);
+
+  --radius-panel: var(--sl-radius-panel);
+  --radius-pill: var(--sl-radius-pill);
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(circle at top, rgba(45, 92, 177, 0.2), transparent 38%),
+    var(--sl-color-background);
+  color: var(--sl-color-foreground);
+  font-family: var(--sl-font-sans);
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  border-color: var(--sl-color-border);
+}
+
+::selection {
+  background: color-mix(in oklch, var(--sl-color-accent) 45%, transparent);
+  color: var(--sl-color-foreground);
+}

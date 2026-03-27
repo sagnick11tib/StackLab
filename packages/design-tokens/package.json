@@ -1,0 +1,20 @@
+{
+  "name": "@stacklab/design-tokens",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./index.css": "./dist/index.css"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node ./scripts/copy-css.mjs",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@stacklab/eslint-config": "workspace:*",
+    "@stacklab/typescript-config": "workspace:*",
+    "eslint": "9.x",
+    "typescript": "5.8.x"
+  }
+}

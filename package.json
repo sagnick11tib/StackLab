@@ -1,0 +1,26 @@
+{
+  "name": "stacklab",
+  "private": true,
+  "packageManager": "pnpm@10.15.1",
+  "engines": {
+    "node": ">=22.0.0 <23"
+  },
+  "scripts": {
+    "dev": "turbo run dev --filter=@stacklab/web",
+    "docs:dev": "turbo run dev --filter=@stacklab/docs",
+    "dev:all": "turbo run dev --filter=@stacklab/web --filter=@stacklab/docs --parallel",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test --filter=@stacklab/web",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "node ./scripts/prepare-husky.mjs"
+  },
+  "devDependencies": {
+    "husky": "9.x",
+    "lint-staged": "16.x",
+    "prettier": "3.x",
+    "turbo": "2.x"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "@stacklab/typescript-config",
+  "private": true,
+  "exports": {
+    "./base.json": "./base.json",
+    "./nextjs.json": "./nextjs.json",
+    "./internal-package.json": "./internal-package.json"
+  }
+}
