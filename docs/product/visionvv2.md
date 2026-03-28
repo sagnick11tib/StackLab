@@ -1,6 +1,6 @@
 # Product Vision v2
 
-> Source note: this is a deep planning document. The Mintlify docs workspace under `apps/docs/` is the canonical public-facing documentation surface.
+> Source note: this is a deep planning document. The production Nextra docs app and its source content live under `apps/docs/`.
 
 ## 1. Document Purpose
 
@@ -56,18 +56,21 @@
 ## 7. Main Problem Statements
 
 ### 7.1 Passive Learning Problem
+
 - Books, blogs, and videos are useful.
 - They are often not enough.
 - Users consume information without seeing it unfold.
 - The result is shallow recall instead of operational understanding.
 
 ### 7.2 Tradeoff Blindness Problem
+
 - Learners often know one common solution.
 - They do not know when that solution becomes weak.
 - They do not know what they are sacrificing when they choose it.
 - They do not know how the tradeoff changes with scale, latency, consistency, or cost.
 
 ### 7.3 Fragmentation Problem
+
 - System design content is in one place.
 - frontend internals content is in another place.
 - backend patterns are elsewhere.
@@ -75,16 +78,19 @@
 - Templates and starter kits rarely connect back to the underlying ideas.
 
 ### 7.4 Real-World Application Problem
+
 - Many resources do not connect theory to products like booking systems, chat apps, payments, dashboards, or notification systems.
 - Users struggle to translate abstract concepts into product architecture.
 
 ### 7.5 Template Quality Problem
+
 - Many templates optimize for speed to first demo.
 - Few optimize for long-term maintainability.
 - Few explain why they chose certain patterns.
 - Few clearly say when not to use them.
 
 ### 7.6 Contributor Quality Problem
+
 - Open-source projects often become inconsistent when contributions scale.
 - AI-generated contributions can amplify that inconsistency.
 - Without a clear product vision, repo structure, and quality bar, the project will fragment quickly.
@@ -104,6 +110,7 @@
 ## 9. Product Identity
 
 ### 9.1 Category
+
 - Interactive engineering education platform
 - Visual systems lab
 - Pattern comparison platform
@@ -111,6 +118,7 @@
 - Starter template library
 
 ### 9.2 Tone
+
 - serious
 - technical
 - clear
@@ -119,6 +127,7 @@
 - engineering-focused
 
 ### 9.3 Emotional Goal
+
 - reduce confusion
 - increase clarity
 - increase engineering confidence
@@ -128,36 +137,43 @@
 ## 10. Non-Negotiable Product Principles
 
 ### 10.1 Simulation Over Decoration
+
 - If a visual element does not teach behavior, it is secondary.
 - StackLab should not become an animation showcase.
 - Motion must support understanding.
 
 ### 10.2 Tradeoffs Over Absolutes
+
 - StackLab should not pretend there is one universal best architecture.
 - The product should highlight context.
 - The product should explain why a choice depends on scale, constraints, and goals.
 
 ### 10.3 Original Explanation Over Content Copying
+
 - StackLab can be inspired by books, talks, and industry practices.
 - StackLab should create original summaries and teaching material.
 - StackLab should not reproduce copyrighted material chapter by chapter.
 
 ### 10.4 Production Realism Over Toy Examples
+
 - Use examples that resemble real systems.
 - Use failure cases that happen in production.
 - Use decision criteria that engineers actually care about.
 
 ### 10.5 Modularity Over Chaos
+
 - Every major feature should fit into a defined product area.
 - Every contribution should map to the product pillars.
 - The repo should stay understandable as it grows.
 
 ### 10.6 Documentation As Product Infrastructure
+
 - Documentation is not an afterthought.
 - Docs are part of how contributors and AI understand the system.
 - Docs should encode decisions, not only describe outcomes.
 
 ### 10.7 AI As Multiplier, Not Authority
+
 - AI can accelerate implementation and documentation.
 - AI cannot replace architectural judgment.
 - StackLab should be designed so AI contributors can help without lowering the bar.
@@ -165,6 +181,7 @@
 ## 11. Core Product Pillars
 
 ### 11.1 Learn
+
 - concise explanations
 - concept maps
 - definitions in plain language
@@ -173,6 +190,7 @@
 - quick refresh pages
 
 ### 11.2 Simulate
+
 - interactive behavior
 - state transitions over time
 - traffic and failure controls
@@ -181,6 +199,7 @@
 - system state inspection
 
 ### 11.3 Compare
+
 - side-by-side pattern comparison
 - tradeoff matrix
 - pros and cons by context
@@ -188,6 +207,7 @@
 - "when to use" and "when not to use" guidance
 
 ### 11.4 Build
+
 - production starter templates
 - implementation notes
 - architecture rationale
@@ -196,6 +216,7 @@
 - anti-pattern warnings
 
 ### 11.5 Contribute
+
 - open-source module model
 - clear repo standards
 - docs for humans and AI
@@ -206,6 +227,7 @@
 ## 12. Primary Product Surfaces
 
 ### 12.1 Landing Surface
+
 - explain what StackLab is
 - communicate vision clearly
 - show feature universe without feeling random
@@ -214,6 +236,7 @@
 - communicate open-source intent
 
 ### 12.2 Learning Surface
+
 - concept pages
 - topic maps
 - summaries
@@ -222,6 +245,7 @@
 - references to related labs
 
 ### 12.3 Simulation Surface
+
 - interactive labs
 - visual architecture diagrams
 - timelines
@@ -230,6 +254,7 @@
 - failure controls
 
 ### 12.4 Comparison Surface
+
 - compare patterns side by side
 - compare stacks and templates
 - compare transport choices
@@ -237,6 +262,7 @@
 - compare caching, database, and queue patterns
 
 ### 12.5 Templates Surface
+
 - stack explorer
 - use-case explorer
 - template selection assistant
@@ -245,6 +271,7 @@
 - production readiness checklist
 
 ### 12.6 Contribution Surface
+
 - contributor docs
 - templates for new modules
 - code standards
@@ -255,47 +282,61 @@
 ## 13. User Segments
 
 ### 13.1 Frontend Developers
+
 They want:
+
 - stronger system understanding
 - better grasp of browser and JavaScript internals
 - better understanding of backend interactions
 - better architectural judgment beyond UI work
 
 ### 13.2 Backend Developers
+
 They want:
+
 - clearer comparisons of architecture patterns
 - realistic tradeoff analysis
 - stronger intuition for distributed systems
 - reusable implementation patterns
 
 ### 13.3 Full-Stack Developers
+
 They want:
+
 - connected understanding across frontend, backend, infra, and delivery
 - templates that help them build quickly without bad defaults
 - product architecture scenarios they can study end to end
 
 ### 13.4 Interview Preparation Users
+
 They want:
+
 - system design practice
 - architecture reasoning
 - scenario-based learning
 - short explanations with concrete tradeoffs
 
 ### 13.5 Builders and Indie Hackers
+
 They want:
+
 - production-ready starters
 - understanding of what to choose for their product type
 - guidance on safe defaults
 - clarity on what not to overbuild
 
 ### 13.6 Contributors and Educators
+
 They want:
+
 - a way to teach through open source
 - a clear framework for adding high-quality content
 - strong docs and templates for contribution
 
 ### 13.7 AI Agents Working In The Repo
+
 They need:
+
 - clear product boundaries
 - strong structure
 - naming discipline
@@ -305,27 +346,32 @@ They need:
 ## 14. Jobs To Be Done
 
 ### 14.1 Learn A Concept
+
 - I want to understand what a concept is.
 - I want to know why it exists.
 - I want to know where it matters.
 - I want to know what can go wrong.
 
 ### 14.2 Choose An Approach
+
 - I want to compare multiple patterns.
 - I want to understand tradeoffs.
 - I want to know what fits my constraints.
 
 ### 14.3 Simulate Behavior
+
 - I want to see what happens when traffic rises.
 - I want to see what breaks during failures.
 - I want to see how one design behaves differently from another.
 
 ### 14.4 Start Building
+
 - I want a strong starter template.
 - I want architecture rationale.
 - I want to know what is included and what is intentionally excluded.
 
 ### 14.5 Contribute A Module
+
 - I want to add value without breaking product consistency.
 - I want clear requirements for docs, visuals, simulation, and quality.
 
@@ -346,10 +392,13 @@ They need:
 StackLab should grow through defined product areas, not random pages.
 
 ### 16.1 System Design Lab
+
 Purpose:
+
 - explain distributed systems through interactive system flow
 
 Core concepts:
+
 - gateways
 - load balancers
 - service-to-service communication
@@ -368,6 +417,7 @@ Core concepts:
 - backpressure
 
 Experiences:
+
 - architecture visualization
 - request routing simulation
 - traffic burst simulation
@@ -378,6 +428,7 @@ Experiences:
 - degraded mode visualization
 
 Questions each module should answer:
+
 - what problem does this component solve
 - what are the common alternatives
 - what happens under traffic spikes
@@ -385,13 +436,17 @@ Questions each module should answer:
 - what is the operational cost of using it
 
 ### 16.2 Runtime Lab
+
 Purpose:
+
 - make language and runtime behavior visible
 
 Initial focus:
+
 - JavaScript
 
 Later possible expansions:
+
 - TypeScript compile-time concepts
 - Node.js internals
 - browser rendering pipeline
@@ -399,6 +454,7 @@ Later possible expansions:
 - server-client boundaries in modern frameworks
 
 Core concepts:
+
 - call stack
 - heap
 - event loop
@@ -413,6 +469,7 @@ Core concepts:
 - fetch lifecycle
 
 Experiences:
+
 - step-by-step execution
 - queue movement visualization
 - stack frame inspection
@@ -421,10 +478,13 @@ Experiences:
 - code panel + runtime panel sync
 
 ### 16.3 Production Patterns Lab
+
 Purpose:
+
 - teach common production choices that appear across many systems
 
 Core topics:
+
 - authn
 - authz
 - RBAC
@@ -452,6 +512,7 @@ Core topics:
 - audit logs
 
 Experiences:
+
 - pattern comparison
 - flow diagrams
 - edge-case walkthroughs
@@ -460,10 +521,13 @@ Experiences:
 - code snippets that map to the concept
 
 ### 16.4 Data Systems Lab
+
 Purpose:
+
 - explain storage, consistency, indexing, and data flow behavior
 
 Core topics:
+
 - relational modeling
 - indexes
 - joins
@@ -483,6 +547,7 @@ Core topics:
 - search indexing
 
 Experiences:
+
 - transaction timeline view
 - read/write path visualization
 - conflict simulation
@@ -490,10 +555,13 @@ Experiences:
 - consistency comparison views
 
 ### 16.5 Reliability And Operations Lab
+
 Purpose:
+
 - teach what makes systems stable in production
 
 Core topics:
+
 - logs
 - metrics
 - traces
@@ -511,6 +579,7 @@ Core topics:
 - capacity planning
 
 Experiences:
+
 - incident timeline
 - deploy timeline
 - alert chain simulation
@@ -518,10 +587,13 @@ Experiences:
 - error budget views
 
 ### 16.6 Security And Identity Lab
+
 Purpose:
+
 - make security decisions understandable without turning the product into a security-only site
 
 Core topics:
+
 - authentication models
 - authorization models
 - session storage
@@ -537,16 +609,20 @@ Core topics:
 - auditability
 
 Experiences:
+
 - request flow diagrams
 - token lifecycle timelines
 - attack surface explanations
 - secure vs insecure implementation comparisons
 
 ### 16.7 Applied Architecture Lab
+
 Purpose:
+
 - connect multiple concepts inside recognizable real-world products
 
 Core scenarios:
+
 - booking platform
 - chat system
 - ride-sharing style dispatching
@@ -559,6 +635,7 @@ Core scenarios:
 - feed generation system
 
 Experiences:
+
 - end-to-end flow view
 - major architecture choices
 - scaling paths
@@ -566,10 +643,13 @@ Experiences:
 - "naive version vs production version" comparison
 
 ### 16.8 Delivery And SDLC Lab
+
 Purpose:
+
 - cover the broader software delivery lifecycle, not only runtime systems
 
 Core topics:
+
 - local development workflows
 - CI pipelines
 - testing strategy
@@ -583,21 +663,26 @@ Core topics:
 - branch and review workflows
 
 Experiences:
+
 - pipeline stage visualization
 - release progression map
 - failed deploy simulation
 - rollback decision path
 
 ### 16.9 Template Library
+
 Purpose:
+
 - convert understanding into a practical starting point
 
 Initial focus stacks:
+
 - Next.js
 - MERN
 - PERN
 
 Future stacks:
+
 - NestJS
 - Express
 - Go
@@ -609,6 +694,7 @@ Future stacks:
 - microservices reference repos
 
 Initial categories:
+
 - landing page
 - SEO-first website
 - docs site
@@ -622,6 +708,7 @@ Initial categories:
 - multi-tenant starter
 
 Each template must include:
+
 - intended audience
 - intended use case
 - architecture summary
@@ -633,10 +720,13 @@ Each template must include:
 - what tradeoffs exist
 
 ### 16.10 Community And Contribution Layer
+
 Purpose:
+
 - make StackLab a living platform, not a closed content dump
 
 Core capabilities:
+
 - contributor guidelines
 - module templates
 - quality gates
@@ -652,6 +742,7 @@ Core capabilities:
 This section lists the broad set of feature families that may eventually belong in StackLab.
 
 ### 17.1 Concept Features
+
 - concept overview pages
 - glossary pages
 - role-specific explanation pages
@@ -660,6 +751,7 @@ This section lists the broad set of feature families that may eventually belong 
 - anti-pattern callouts
 
 ### 17.2 Simulation Features
+
 - timeline scrubber
 - play/pause control
 - speed control
@@ -672,6 +764,7 @@ This section lists the broad set of feature families that may eventually belong 
 - reset to preset
 
 ### 17.3 Comparison Features
+
 - side-by-side compare mode
 - pros and cons matrix
 - cost vs complexity matrix
@@ -680,6 +773,7 @@ This section lists the broad set of feature families that may eventually belong 
 - setup speed vs long-term maintainability matrix
 
 ### 17.4 Practice Features
+
 - interview mode
 - challenge mode
 - diagnosis mode
@@ -688,6 +782,7 @@ This section lists the broad set of feature families that may eventually belong 
 - what-went-wrong retrospectives
 
 ### 17.5 Applied Scenario Features
+
 - scenario presets
 - business constraints panel
 - traffic assumptions panel
@@ -696,6 +791,7 @@ This section lists the broad set of feature families that may eventually belong 
 - scale progression paths
 
 ### 17.6 Template Features
+
 - use-case selector
 - stack selector
 - template comparison
@@ -705,6 +801,7 @@ This section lists the broad set of feature families that may eventually belong 
 - linked concept references
 
 ### 17.7 Collaboration Features
+
 - saved scenarios
 - shared links
 - public presets
@@ -713,6 +810,7 @@ This section lists the broad set of feature families that may eventually belong 
 - changelog by module
 
 ### 17.8 AI Features
+
 - AI explainer for architecture changes
 - AI suggestion layer for compare mode
 - AI-generated starter scenarios with review gates
@@ -722,7 +820,9 @@ This section lists the broad set of feature families that may eventually belong 
 ## 18. Detailed Feature Areas By Topic
 
 ### 18.1 Authentication And Authorization
+
 Should cover:
+
 - what authentication is
 - what authorization is
 - where they meet
@@ -741,12 +841,14 @@ Should cover:
 - audit trails
 
 Should compare:
+
 - session auth vs JWT auth
 - RBAC vs ABAC
 - centralized auth vs service-local checks
 - short-lived tokens vs long-lived tokens
 
 Should simulate:
+
 - login flow
 - token refresh flow
 - permission evaluation
@@ -754,7 +856,9 @@ Should simulate:
 - invalid session or expired token behavior
 
 ### 18.2 Booking System Architecture
+
 Should cover:
+
 - inventory ownership
 - race conditions
 - seat reservation windows
@@ -768,18 +872,22 @@ Should cover:
 - consistency expectations
 
 Should compare:
+
 - no lock vs optimistic lock vs pessimistic lock
 - DB lock vs distributed lock
 - sync confirmation vs async confirmation
 
 Should simulate:
+
 - many users competing for one item
 - timeout expiry behavior
 - payment callback delay
 - reservation release behavior
 
 ### 18.3 Chat System Architecture
+
 Should cover:
+
 - polling
 - long polling
 - WebSockets
@@ -794,18 +902,22 @@ Should cover:
 - group scaling
 
 Should compare:
+
 - polling vs WebSockets
 - direct fanout vs queue-based fanout
 - client ordering vs server ordering
 
 Should simulate:
+
 - user online/offline transitions
 - delayed message delivery
 - duplicate message handling
 - read receipt propagation
 
 ### 18.4 Payments Flow
+
 Should cover:
+
 - payment intent flow
 - third-party processor interaction
 - webhook handling
@@ -817,13 +929,16 @@ Should cover:
 - eventual consistency between local state and payment provider
 
 Should simulate:
+
 - delayed webhook
 - duplicate webhook
 - partial failure after charge success
 - reconciliation flow
 
 ### 18.5 Caching Patterns
+
 Should cover:
+
 - cache-aside
 - read-through
 - write-through
@@ -836,19 +951,23 @@ Should cover:
 - cache warming
 
 Should compare:
+
 - correctness risk
 - latency improvement
 - implementation complexity
 - operational overhead
 
 Should simulate:
+
 - cache miss storm
 - stale cache behavior
 - invalidation race condition
 - hot key amplification
 
 ### 18.6 Queues And Workers
+
 Should cover:
+
 - queue basics
 - push vs pull workers
 - retry strategies
@@ -861,6 +980,7 @@ Should cover:
 - fanout via queue
 
 Should simulate:
+
 - worker crash
 - reprocessing
 - backpressure
@@ -868,7 +988,9 @@ Should simulate:
 - consumer lag growth
 
 ### 18.7 Databases And Consistency
+
 Should cover:
+
 - transactions
 - isolation levels
 - write contention
@@ -880,18 +1002,22 @@ Should cover:
 - search vs DB source of truth
 
 Should compare:
+
 - SQL vs document model for certain cases
 - leader-follower vs single-node assumptions
 - strong consistency vs eventual consistency
 
 Should simulate:
+
 - stale read from replica
 - transaction conflict
 - high write lock contention
 - read/write split issues
 
 ### 18.8 Observability
+
 Should cover:
+
 - logs
 - metrics
 - traces
@@ -903,13 +1029,16 @@ Should cover:
 - distributed tracing intuition
 
 Should simulate:
+
 - error spike after deploy
 - latency increase in one dependency
 - correlation between symptom and root cause
 - missing observability blind spots
 
 ### 18.9 CI/CD And Release Strategy
+
 Should cover:
+
 - build pipeline
 - test stages
 - artifact promotion
@@ -922,6 +1051,7 @@ Should cover:
 - feature flags
 
 Should simulate:
+
 - failing deploy
 - partial rollout issue
 - rollback timing
@@ -932,6 +1062,7 @@ Should simulate:
 StackLab should include recognizable system scenarios.
 
 Possible scenario library:
+
 - high-demand concert seat booking
 - flash-sale checkout system
 - team chat application
@@ -946,6 +1077,7 @@ Possible scenario library:
 - content platform with SEO and CMS concerns
 
 Each scenario should include:
+
 - business goal
 - user behavior assumptions
 - scale assumptions
@@ -960,6 +1092,7 @@ Each scenario should include:
 Every future StackLab module should follow a common structure.
 
 ### 20.1 Required Section Order
+
 - overview
 - why it matters
 - core concepts
@@ -973,7 +1106,9 @@ Every future StackLab module should follow a common structure.
 - glossary
 
 ### 20.2 Required Questions
+
 A module should answer:
+
 - what is this concept
 - what problem does it solve
 - where is it used
@@ -984,7 +1119,9 @@ A module should answer:
 - when should a user avoid this option
 
 ### 20.3 Required Learning Outputs
+
 A user should leave with:
+
 - clearer vocabulary
 - stronger pattern recognition
 - ability to compare options
@@ -996,6 +1133,7 @@ A user should leave with:
 Compare mode should be one of StackLab's strongest product features.
 
 It should support:
+
 - side-by-side pattern cards
 - context assumptions per option
 - strengths and weaknesses
@@ -1008,6 +1146,7 @@ It should support:
 - scaling profile
 
 Examples:
+
 - session auth vs JWT
 - optimistic vs pessimistic locking
 - polling vs WebSocket
@@ -1020,6 +1159,7 @@ Examples:
 Failure understanding should be a first-class feature, not a footnote.
 
 Every serious module should consider:
+
 - dependency timeout
 - partial failure
 - retry amplification
@@ -1033,6 +1173,7 @@ Every serious module should consider:
 - eventual consistency mismatch
 
 Failure mode UX can include:
+
 - toggles
 - staged incidents
 - incident timeline view
@@ -1044,6 +1185,7 @@ Failure mode UX can include:
 StackLab should eventually include a mode that is useful for system design and architecture interviews.
 
 Interview mode could include:
+
 - problem prompt
 - constraints panel
 - traffic assumptions
@@ -1054,6 +1196,7 @@ Interview mode could include:
 - feedback on missed considerations
 
 Important rule:
+
 - interview mode should still feel grounded in production reasoning
 - it should not train users to memorize canned answers only
 
@@ -1062,6 +1205,7 @@ Important rule:
 Challenge mode can make learning active.
 
 Examples:
+
 - fix overselling in a booking flow
 - reduce retry storm blast radius
 - choose the right auth model for a SaaS app
@@ -1073,6 +1217,7 @@ Examples:
 StackLab should eventually support guided paths.
 
 Possible paths:
+
 - frontend engineer path
 - backend engineer path
 - full-stack engineer path
@@ -1082,6 +1227,7 @@ Possible paths:
 - production reliability path
 
 Each path should sequence:
+
 - foundational concepts
 - related labs
 - compare modules
@@ -1093,6 +1239,7 @@ Each path should sequence:
 Users should be able to find content by multiple entry points.
 
 Discovery dimensions:
+
 - by role
 - by problem
 - by system type
@@ -1107,6 +1254,7 @@ Discovery dimensions:
 StackLab should support multiple content shapes.
 
 Primary content types:
+
 - concept page
 - simulation module
 - compare module
@@ -1123,6 +1271,7 @@ Primary content types:
 StackLab should allow concept inspiration from respected books and major industry ideas.
 
 Rules:
+
 - no direct copy of full book chapters
 - no chapter-by-chapter recreation of paid content
 - always write original explanations
@@ -1130,6 +1279,7 @@ Rules:
 - connect ideas to simulations and real-world scenarios
 
 Potential inspirations:
+
 - system design books
 - distributed systems ideas
 - clean architecture and design principles
@@ -1142,12 +1292,14 @@ The template library is not a side feature.
 It is one of StackLab's major product differentiators.
 
 ### 29.1 Why Templates Matter
+
 - users want to build after learning
 - users need a starting point with strong defaults
 - users need explanations, not only files
 - users need to understand why a template is right or wrong for a given use case
 
 ### 29.2 Template Principles
+
 - production-oriented defaults
 - clear scope
 - explicit tradeoffs
@@ -1157,11 +1309,13 @@ It is one of StackLab's major product differentiators.
 - no unexplained complexity
 
 ### 29.3 Initial Stack Coverage
+
 - Next.js
 - MERN
 - PERN
 
 ### 29.4 Future Stack Coverage
+
 - NestJS backend starters
 - Go API starters
 - FastAPI service starters
@@ -1172,6 +1326,7 @@ It is one of StackLab's major product differentiators.
 - event-driven backend references
 
 ### 29.5 Next.js Template Categories
+
 - landing page template
 - SEO-first marketing site template
 - docs site template
@@ -1182,6 +1337,7 @@ It is one of StackLab's major product differentiators.
 - admin panel template
 
 ### 29.6 MERN Template Categories
+
 - admin dashboard app
 - content CRUD app
 - real-time chat starter
@@ -1189,6 +1345,7 @@ It is one of StackLab's major product differentiators.
 - internal tool starter
 
 ### 29.7 PERN Template Categories
+
 - SaaS backend + dashboard starter
 - booking workflow starter
 - analytics dashboard starter
@@ -1196,7 +1353,9 @@ It is one of StackLab's major product differentiators.
 - queue-ready API starter
 
 ### 29.8 Template Page Standard
+
 Each template page should explain:
+
 - what it is for
 - who should use it
 - who should not use it
@@ -1215,12 +1374,14 @@ Each template page should explain:
 StackLab should have a distinct visual identity.
 
 ### 30.1 Design Theme
+
 - futuristic systems lab
 - technical but elegant
 - dense but readable
 - bold but not noisy
 
 ### 30.2 Visual Characteristics
+
 - strong information hierarchy
 - architecture-inspired layouts
 - telemetry-inspired visuals
@@ -1230,6 +1391,7 @@ StackLab should have a distinct visual identity.
 - meaningful motion
 
 ### 30.3 What To Avoid
+
 - generic startup gradients with no structure
 - empty glossy effects
 - copycat Vercel/Linear design with no product-specific identity
@@ -1238,6 +1400,7 @@ StackLab should have a distinct visual identity.
 ## 31. UX Rules
 
 StackLab UX should consistently answer:
+
 - where am I
 - what concept am I exploring
 - what problem is being solved
@@ -1247,6 +1410,7 @@ StackLab UX should consistently answer:
 - what should I look at next
 
 UX principles:
+
 - clear state
 - clear progression
 - low ambiguity
@@ -1257,6 +1421,7 @@ UX principles:
 ## 32. Information Architecture Vision
 
 A possible top-level IA for the future product:
+
 - Home
 - Vision
 - Labs
@@ -1267,6 +1432,7 @@ A possible top-level IA for the future product:
 - Contribute
 
 Possible Labs grouping:
+
 - Runtime
 - System Design
 - Data
@@ -1276,6 +1442,7 @@ Possible Labs grouping:
 - Delivery
 
 Possible Templates grouping:
+
 - By stack
 - By use case
 - By feature set
@@ -1286,6 +1453,7 @@ Possible Templates grouping:
 StackLab should feel welcoming but disciplined.
 
 Contributors should be able to contribute in different ways:
+
 - engineering implementation
 - docs writing
 - concept design
@@ -1296,6 +1464,7 @@ Contributors should be able to contribute in different ways:
 - review and QA
 
 Contributor experience should include:
+
 - clear issue labels
 - clear ownership areas
 - module templates
@@ -1309,6 +1478,7 @@ Contributor experience should include:
 Because contributor motivation matters, StackLab should eventually include visible contributor recognition.
 
 Possible recognition mechanisms:
+
 - contributor wall
 - module credits
 - template credits
@@ -1316,6 +1486,7 @@ Possible recognition mechanisms:
 - special recognition for major architecture or documentation improvements
 
 Recognition rule:
+
 - credit should reward high-quality contribution, not volume alone
 
 ## 35. AI Contribution Model
@@ -1323,6 +1494,7 @@ Recognition rule:
 StackLab should explicitly support AI-assisted work.
 
 Rules:
+
 - AI use is allowed
 - maintainability is mandatory
 - contributors remain responsible for every line
@@ -1331,6 +1503,7 @@ Rules:
 - low-quality copy-paste AI dumps should be rejected
 
 Future repo support for AI could include:
+
 - `AGENTS.md`
 - module templates
 - AI-facing architecture docs
@@ -1342,6 +1515,7 @@ Future repo support for AI could include:
 The repo should support both human and machine understanding.
 
 Human-facing docs should include:
+
 - README
 - CONTRIBUTING
 - architecture overview
@@ -1351,6 +1525,7 @@ Human-facing docs should include:
 - module authoring guides
 
 LLM-facing docs should include:
+
 - AGENTS.md
 - AI contribution rules
 - repo map
@@ -1362,6 +1537,7 @@ LLM-facing docs should include:
 StackLab should not drift because of unstructured enthusiasm.
 
 Governance should favor:
+
 - coherence over feature count
 - module quality over speed
 - docs-backed decisions
@@ -1369,6 +1545,7 @@ Governance should favor:
 - gradual expansion
 
 Major additions should be evaluated against:
+
 - product fit
 - educational value
 - simulation value
@@ -1379,6 +1556,7 @@ Major additions should be evaluated against:
 ## 38. How To Decide If A Feature Belongs
 
 A feature is a good fit if it:
+
 - teaches an important software engineering concept
 - helps users compare real choices
 - shows behavior or failure clearly
@@ -1387,6 +1565,7 @@ A feature is a good fit if it:
 - can be documented cleanly
 
 A feature is a weak fit if it:
+
 - exists only because it looks cool
 - duplicates a large amount of content without new value
 - does not teach a decision
@@ -1396,6 +1575,7 @@ A feature is a weak fit if it:
 ## 39. Open Source Positioning
 
 StackLab should position itself as:
+
 - open-source first
 - contributor-friendly
 - design-aware
@@ -1409,6 +1589,7 @@ The product should feel like a serious engineering initiative, not a random side
 StackLab is still in the foundation stage.
 
 The current responsibilities are:
+
 - define the product clearly
 - document the scope deeply
 - build the landing page
@@ -1417,13 +1598,16 @@ The current responsibilities are:
 - structure the repo for future expansion
 
 Important rule:
+
 - the landing page is not the product
 - but the landing page must accurately express the product ambition
 
 ## 41. Phase Plan
 
 ### 41.1 Phase 0: Product Foundation
+
 Focus:
+
 - README
 - AGENTS
 - vision docs
@@ -1432,12 +1616,15 @@ Focus:
 - contribution model
 
 Success signs:
+
 - the project has a clear story
 - contributors can understand what StackLab is
 - future implementation has direction
 
 ### 41.2 Phase 1: Brand And Public Surface
+
 Focus:
+
 - landing page
 - module previews
 - roadmap
@@ -1446,34 +1633,43 @@ Focus:
 - contributor call to action
 
 Success signs:
+
 - product vision is compelling
 - users understand the feature universe
 - future contributors know where to start
 
 ### 41.3 Phase 2: First Interactive Labs
+
 Recommended first labs:
+
 - JavaScript runtime lab
 - system design flow lab
 - auth and RBAC lab
 - booking concurrency lab
 
 Success signs:
+
 - StackLab demonstrates real interaction, not only content
 - users can compare choices and observe consequences
 
 ### 41.4 Phase 3: Template Library Foundation
+
 Focus:
+
 - first Next.js templates
 - first MERN or PERN starter
 - template pages with rationale
 - linked concept references
 
 Success signs:
+
 - users can move from learning to building
 - templates feel trustworthy and documented
 
 ### 41.5 Phase 4: Product Expansion
+
 Focus:
+
 - applied architecture labs
 - compare mode expansion
 - saved scenarios
@@ -1481,7 +1677,9 @@ Focus:
 - contributor workflows at scale
 
 ### 41.6 Phase 5: Ecosystem Layer
+
 Focus:
+
 - community-built modules
 - contributor recognition systems
 - role-based paths
@@ -1493,6 +1691,7 @@ Focus:
 The best first serious version of StackLab should not try to cover everything.
 
 Recommended MVP focus:
+
 - landing page that explains the mission clearly
 - one runtime module
 - one system design module
@@ -1501,6 +1700,7 @@ Recommended MVP focus:
 - docs foundation
 
 A strong MVP set:
+
 - JS event loop lab
 - request flow through gateway, cache, service, and DB lab
 - auth or RBAC compare module
@@ -1509,6 +1709,7 @@ A strong MVP set:
 ## 43. What Must Be Deferred
 
 To protect focus, defer these until the foundation is real:
+
 - every possible topic at once
 - all language templates at once
 - community module marketplace features
@@ -1519,31 +1720,38 @@ To protect focus, defer these until the foundation is real:
 ## 44. Risks
 
 ### 44.1 Scope Explosion
+
 - The product idea is naturally large.
 - Without disciplined phasing, nothing gets finished.
 
 ### 44.2 UI-First Trap
+
 - The landing page could become over-polished while the product model stays vague.
 - StackLab must not be all branding and no substance.
 
 ### 44.3 Template Sprawl
+
 - Template libraries become messy fast.
 - Without strict standards, this area can dilute the product.
 
 ### 44.4 Open-Source Inconsistency
+
 - Contributions can make the repo noisy if module rules are weak.
 
 ### 44.5 AI Quality Drift
+
 - AI can produce large amounts of plausible but inconsistent output.
 - Repo docs must constrain this.
 
 ### 44.6 Copyright Risk
+
 - Book-inspired content must remain original.
 - The product should not mirror book structures too literally.
 
 ## 45. Success Metrics
 
 Possible long-term success indicators:
+
 - users finish modules and actually understand tradeoffs better
 - contributors can add modules with low confusion
 - templates are adopted and extended safely
@@ -1551,6 +1759,7 @@ Possible long-term success indicators:
 - the repo stays coherent as the contributor base grows
 
 Early-stage practical metrics:
+
 - docs completeness
 - clarity of landing page message
 - first module completion quality
@@ -1560,6 +1769,7 @@ Early-stage practical metrics:
 ## 46. Product Quality Bar
 
 Before a feature is considered strong, it should meet most of these:
+
 - concept clarity
 - visual clarity
 - interaction clarity
@@ -1573,6 +1783,7 @@ Before a feature is considered strong, it should meet most of these:
 ## 47. What StackLab Is Not
 
 StackLab is not:
+
 - a generic course marketplace
 - a static wiki with pretty design
 - a clone of a docs portal
@@ -1583,6 +1794,7 @@ StackLab is not:
 ## 48. Product Standard For Every Future Module
 
 Every serious StackLab module should be able to say:
+
 - this is the concept
 - this is the problem it solves
 - these are the major approaches
@@ -1596,6 +1808,7 @@ If a future feature cannot support that standard, it probably does not belong in
 ## 49. Immediate Next Steps
 
 The most sensible next work after this document:
+
 - refine landing page wireframe based on the product pillars
 - create UI guidelines for the StackLab visual language
 - create UX flows for the landing page and future labs
@@ -1608,17 +1821,20 @@ The most sensible next work after this document:
 StackLab should become one of the clearest open-source places on the internet to understand how software systems are designed, behave, fail, recover, and get built.
 
 It should help users:
+
 - learn faster
 - reason better
 - build with stronger defaults
 - contribute with more confidence
 
 It should help contributors:
+
 - teach through code and docs
 - add modules without breaking the product
 - use AI responsibly inside a disciplined engineering system
 
 It should help the repo itself remain:
+
 - coherent
 - modular
 - documented

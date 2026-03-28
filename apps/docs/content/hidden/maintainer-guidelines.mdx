@@ -1,0 +1,27 @@
+---
+title: "Maintainer Guidelines"
+description: "Hidden maintainer-facing guidance for doc ownership, review discipline, and source-of-truth rules in StackLab."
+---
+
+# Maintainer Guidelines
+
+This page captures the maintainer-quality rules that should remain accessible without sitting in the primary navigation.
+
+## Source Of Truth
+
+- `apps/docs/` contains the production Nextra docs app and its source content
+- `apps/docs/content/` is canonical for public-facing product messaging
+- `README.md` is a repo entrypoint, not the authoritative product site
+- `AGENTS.md` is repo-local and operational
+- `docs/product/*.md` remain source material and deeper planning references
+
+## Review Rules
+
+- reject product messaging drift
+- reject duplicated competing sources of truth
+- reject low-context AI dumps
+- require docs updates when product direction changes
+
+## Hidden Page Rule
+
+Hidden pages should stay public and linkable, but they should not clutter the main documentation experience unless they become broadly useful.

@@ -12,8 +12,8 @@ const baseConfig = [
       "**/.turbo/**",
       "**/.next/**",
       "**/node_modules/**",
-      "**/next-env.d.ts"
-    ]
+      "**/next-env.d.ts",
+    ],
   },
   js.configs.recommended,
   ...tseslint.configs.recommended,
@@ -22,18 +22,18 @@ const baseConfig = [
     languageOptions: {
       globals: {
         ...globals.browser,
-        ...globals.node
-      }
+        ...globals.node,
+      },
     },
     plugins: {
-      "simple-import-sort": simpleImportSort
+      "simple-import-sort": simpleImportSort,
     },
     rules: {
       "simple-import-sort/imports": "error",
-      "simple-import-sort/exports": "error"
-    }
+      "simple-import-sort/exports": "error",
+    },
   },
-  prettierConfig
+  prettierConfig,
 ];
 
 export default baseConfig;

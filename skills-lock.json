@@ -16,11 +16,6 @@
       "sourceType": "github",
       "computedHash": "063a0e6448123cd359ad0044cc46b0e490cc7964d45ef4bb9fd842bd2ffbca67"
     },
-    "mintlify": {
-      "source": "mintlify.com",
-      "sourceType": "well-known",
-      "computedHash": "fc61ab6703f692dc2c215e74327a8998d02987ca9571084440be20e7ecad6b46"
-    },
     "next-best-practices": {
       "source": "vercel-labs/next-skills",
       "sourceType": "github",

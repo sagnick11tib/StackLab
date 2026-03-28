@@ -8,14 +8,14 @@ export const siteMetadata = {
   description:
     "StackLab is an open-source platform for learning software engineering through simulations, architecture tradeoffs, and production-ready templates.",
   url: env.NEXT_PUBLIC_SITE_URL,
-  docsUrl: env.NEXT_PUBLIC_DOCS_URL
+  docsUrl: env.NEXT_PUBLIC_DOCS_URL,
 } as const;
 
 export const marketingMetadata: Metadata = {
   metadataBase: new URL(siteMetadata.url),
   title: {
     default: siteMetadata.name,
-    template: `%s | ${siteMetadata.name}`
+    template: `%s | ${siteMetadata.name}`,
   },
   description: siteMetadata.description,
   openGraph: {
@@ -23,14 +23,14 @@ export const marketingMetadata: Metadata = {
     description: siteMetadata.description,
     siteName: siteMetadata.name,
     type: "website",
-    url: siteMetadata.url
+    url: siteMetadata.url,
   },
   twitter: {
     card: "summary_large_image",
     title: siteMetadata.name,
-    description: siteMetadata.description
+    description: siteMetadata.description,
   },
   alternates: {
-    canonical: "/"
-  }
+    canonical: "/",
+  },
 };

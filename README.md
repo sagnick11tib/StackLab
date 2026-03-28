@@ -2,21 +2,21 @@
 
 StackLab is an open-source platform for learning software engineering through simulations, architecture tradeoffs, and production-ready templates.
 
-The canonical public product docs now live in the standalone Mintlify workspace under [`apps/docs/`](./apps/docs). The long-form markdown files in [`docs/product`](./docs/product) remain source material and planning references, but the Mintlify pages are the main source of truth for public-facing messaging.
+The production docs app lives in [`apps/docs/`](./apps/docs). Its MDX source content is stored under [`apps/docs/content/`](./apps/docs/content).
 
 ## Start Here
 
-- [Mintlify config](./apps/docs/docs.json)
-- [Introduction](./apps/docs/introduction.mdx)
-- [Product vision](./apps/docs/product/vision.mdx)
-- [Labs overview](./apps/docs/labs/overview.mdx)
-- [Templates overview](./apps/docs/templates/overview.mdx)
-- [Contributing overview](./apps/docs/contribute/overview.mdx)
+- [Docs app](./apps/docs)
+- [Introduction](./apps/docs/content/index.mdx)
+- [Product vision](./apps/docs/content/product/vision.mdx)
+- [Labs overview](./apps/docs/content/labs/overview.mdx)
+- [Templates overview](./apps/docs/content/templates/overview.mdx)
+- [Contributing overview](./apps/docs/content/contribute/overview.mdx)
 
 ## Current Repo Structure
 
 - [`apps/web/`](./apps/web): Next.js landing-page boilerplate and future product surface
-- [`apps/docs/`](./apps/docs): Mintlify docs workspace and canonical public docs
+- [`apps/docs/`](./apps/docs): production Nextra docs app and source-controlled docs content
 - [`packages/design-tokens/`](./packages/design-tokens): shared CSS-variable-first theme tokens
 - [`packages/eslint-config/`](./packages/eslint-config): shared ESLint flat configs
 - [`packages/typescript-config/`](./packages/typescript-config): shared TypeScript presets
@@ -28,10 +28,10 @@ The canonical public product docs now live in the standalone Mintlify workspace 
 ## Local Docs Workflow
 
 - `pnpm dev` runs the Next.js landing surface from `apps/web`.
-- `pnpm docs:dev` runs the Mintlify docs workspace from `apps/docs` on port `3333`.
-- The docs site is built for Mintlify and organized around Overview, Product, Labs, Templates, Contribute, and Reference sections.
-- Hidden-but-public pages under [`apps/docs/hidden`](./apps/docs/hidden) are intended for AI-agent and maintainer context.
-- Product messaging changes should be updated in the Mintlify pages first, then reflected in repo summaries if needed.
+- `pnpm docs:dev` runs the Nextra docs app from `apps/docs` on port `3001`.
+- The docs content is organized around Overview, Product, Labs, Templates, Contribute, and Reference sections.
+- Hidden-but-public pages under [`apps/docs/content/hidden`](./apps/docs/content/hidden) are intended for AI-agent and maintainer context.
+- Product messaging changes should be updated in the docs content workspace first, then reflected in repo summaries if needed.
 
 ## Project Direction
 

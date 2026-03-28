@@ -2,7 +2,9 @@ import { existsSync } from "node:fs";
 import { spawnSync } from "node:child_process";
 
 if (!existsSync(".git")) {
-  console.log("Skipping Husky install because this directory is not a git repository yet.");
+  console.log(
+    "Skipping Husky install because this directory is not a git repository yet.",
+  );
   process.exit(0);
 }
 

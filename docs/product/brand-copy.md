@@ -1,6 +1,6 @@
 # StackLab Brand Copy
 
-> Source note: this file is messaging source material for the Mintlify docs workspace under `apps/docs/`.
+> Source note: this file is messaging source material for the shared docs content workspace under `apps/docs/`.
 
 ## Brand Name
 
@@ -39,26 +39,31 @@
 ## Core Messaging Pillars
 
 ### 1. Learn
+
 - Clear explanations of important engineering concepts.
 - Original summaries, not copied theory dumps.
 - Practical understanding over memorized terminology.
 
 ### 2. Simulate
+
 - Visualize behavior over time.
 - Explore request flow, runtime behavior, failures, and scale.
 - Move from static reading to interactive understanding.
 
 ### 3. Compare
+
 - See multiple approaches side by side.
 - Understand cost, complexity, reliability, and correctness tradeoffs.
 - Learn why one choice works better than another in context.
 
 ### 4. Build
+
 - Start from production-oriented templates.
 - Understand why the template is structured the way it is.
 - Avoid weak defaults and unexplained boilerplate.
 
 ### 5. Contribute
+
 - Open source by design.
 - Built for contributors and AI-assisted workflows with strong repo rules.
 - Structured so the platform can grow without becoming chaotic.
@@ -85,6 +90,7 @@
 ## Hero Copy Options
 
 ### Hero Option 1
+
 - Eyebrow: `Open-source software engineering platform`
 - Headline: `Learn how production systems actually work.`
 - Supporting copy: `StackLab helps developers understand runtime behavior, system design, engineering tradeoffs, and production architecture through interactive labs and production-ready templates.`
@@ -92,6 +98,7 @@
 - CTA 2: `Follow The Build`
 
 ### Hero Option 2
+
 - Eyebrow: `Interactive software engineering lab`
 - Headline: `See systems behave. Compare decisions. Build with better defaults.`
 - Supporting copy: `From JavaScript internals to distributed systems, StackLab turns engineering concepts into simulations, architecture comparisons, and implementation-ready guidance.`
@@ -99,6 +106,7 @@
 - CTA 2: `View Roadmap`
 
 ### Hero Option 3
+
 - Eyebrow: `Built for developers who want more than theory`
 - Headline: `From runtime internals to production architecture.`
 - Supporting copy: `StackLab connects software engineering concepts, real-world system behavior, and production-minded templates in one open-source platform.`
@@ -108,15 +116,19 @@
 ## Homepage Section Copy
 
 ### What StackLab Is
+
 - StackLab is an open-source platform for learning software engineering through interaction instead of passive reading alone.
 
 ### Why It Exists
+
 - Most developers learn concepts from books, videos, and blog posts, but still struggle to understand how systems behave under load, fail in production, or change when the architecture changes.
 
 ### What Makes It Different
+
 - StackLab combines explanation, simulation, comparison, and production-ready implementation paths in one product.
 
 ### What You Can Explore
+
 - System design labs
 - JavaScript and runtime internals
 - production engineering patterns
@@ -124,23 +136,29 @@
 - production-ready templates
 
 ### Open Source Message
+
 - StackLab is built in public for contributors who care about software engineering, systems thinking, and strong technical documentation.
 
 ## Feature Preview Copy
 
 ### System Design Labs
+
 - Explore gateways, services, caches, queues, databases, and failure paths through interactive architecture simulations.
 
 ### Runtime Labs
+
 - Visualize the event loop, call stack, promises, closures, and runtime behavior step by step.
 
 ### Pattern Comparisons
+
 - Compare sessions vs JWT, optimistic vs pessimistic locking, polling vs WebSockets, and other production choices side by side.
 
 ### Applied Architecture
+
 - Study real product scenarios like booking flows, chat systems, payments, notifications, and scaling paths.
 
 ### Templates Library
+
 - Start from production-grade Next.js, MERN, and PERN templates built for real use cases, not just demo speed.
 
 ## Contributor Messaging
@@ -152,6 +170,7 @@
 ## CTA Copy
 
 ### Primary CTA Ideas
+
 - `Explore The Vision`
 - `Join Early`
 - `Follow The Build`
@@ -159,6 +178,7 @@
 - `Read The Docs`
 
 ### Secondary CTA Ideas
+
 - `View Roadmap`
 - `See Future Labs`
 - `Read Why StackLab Exists`
