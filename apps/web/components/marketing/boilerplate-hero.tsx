@@ -4,12 +4,19 @@ import { siteMetadata } from "@/lib/metadata/site";
 
 const checkpoints = [
   "App Router layout boundary is in place.",
-  "Mintlify docs stay separate in apps/docs.",
+  "Docs ship from a single Nextra app in apps/docs.",
+  "MDX content is source-controlled under apps/docs/content.",
   "CSS-variable tokens drive the theme contract.",
-  "Playwright validates the first public route."
+  "Playwright validates the first public route.",
+  "The docs app is deployment-ready on its own subdomain.",
 ];
 
 export function BoilerplateHero() {
+  const roadmapUrl = new URL(
+    "/product/roadmap",
+    siteMetadata.docsUrl,
+  ).toString();
+
   return (
     <section className="grid flex-1 gap-8 lg:grid-cols-[minmax(0,1.1fr)_minmax(22rem,0.9fr)] lg:items-stretch">
       <div className="flex flex-col justify-center rounded-[2rem] border border-border bg-surface p-8 shadow-[var(--sl-shadow-panel)] backdrop-blur sm:p-10">
@@ -20,22 +27,22 @@ export function BoilerplateHero() {
           {siteMetadata.name}
         </h1>
         <p className="mt-6 max-w-2xl text-base leading-7 text-foreground-soft sm:text-lg">
-          {siteMetadata.description} This first commit intentionally stops at structure,
-          metadata, validation, testing, and token wiring so the landing page can grow on a
-          stable foundation.
+          {siteMetadata.description} This first commit intentionally stops at
+          structure, metadata, validation, testing, and token wiring so the
+          landing page can grow on a stable foundation.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <Link
             className="inline-flex items-center justify-center rounded-full bg-accent px-5 py-3 text-sm font-medium text-background transition hover:brightness-110"
             href={siteMetadata.docsUrl}
           >
-            Open Docs Workspace
+            Open Docs
           </Link>
           <Link
             className="inline-flex items-center justify-center rounded-full border border-border px-5 py-3 text-sm font-medium text-foreground transition hover:border-accent hover:text-accent"
-            href="/"
+            href={roadmapUrl}
           >
-            Landing Shell Ready
+            View Roadmap
           </Link>
         </div>
       </div>
@@ -64,19 +71,25 @@ export function BoilerplateHero() {
               <dt className="font-mono text-[0.68rem] uppercase tracking-[0.24em] text-foreground-muted">
                 Framework
               </dt>
-              <dd className="mt-2 text-foreground-soft">Next.js 15 App Router</dd>
+              <dd className="mt-2 text-foreground-soft">
+                Next.js 15 App Router
+              </dd>
             </div>
             <div className="rounded-2xl border border-border bg-surface-muted p-4">
               <dt className="font-mono text-[0.68rem] uppercase tracking-[0.24em] text-foreground-muted">
                 Styling
               </dt>
-              <dd className="mt-2 text-foreground-soft">Tailwind CSS 4 + tokens</dd>
+              <dd className="mt-2 text-foreground-soft">
+                Tailwind CSS 4 + tokens
+              </dd>
             </div>
             <div className="rounded-2xl border border-border bg-surface-muted p-4">
               <dt className="font-mono text-[0.68rem] uppercase tracking-[0.24em] text-foreground-muted">
                 Docs
               </dt>
-              <dd className="mt-2 text-foreground-soft">Mintlify in apps/docs</dd>
+              <dd className="mt-2 text-foreground-soft">
+                Single Nextra docs app
+              </dd>
             </div>
             <div className="rounded-2xl border border-border bg-surface-muted p-4">
               <dt className="font-mono text-[0.68rem] uppercase tracking-[0.24em] text-foreground-muted">

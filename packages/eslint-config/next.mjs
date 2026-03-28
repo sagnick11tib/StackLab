@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 import baseConfig from "./base.mjs";
 
 const compat = new FlatCompat({
-  baseDirectory: dirname(fileURLToPath(import.meta.url))
+  baseDirectory: dirname(fileURLToPath(import.meta.url)),
 });
 
 const nextConfig = [
@@ -13,9 +13,9 @@ const nextConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
   {
     rules: {
-      "@next/next/no-html-link-for-pages": "off"
-    }
-  }
+      "@next/next/no-html-link-for-pages": "off",
+    },
+  },
 ];
 
 export default nextConfig;

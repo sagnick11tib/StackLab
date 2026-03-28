@@ -1,6 +1,8 @@
 import { expect, test } from "@playwright/test";
 
-test("the landing shell renders with production-grade baseline checks", async ({ page }) => {
+test("the landing shell renders with production-grade baseline checks", async ({
+  page,
+}) => {
   const consoleErrors: string[] = [];
   const pageErrors: string[] = [];
 
@@ -20,7 +22,9 @@ test("the landing shell renders with production-grade baseline checks", async ({
   await expect(page).toHaveTitle(/StackLab/);
   await expect(page.locator("main")).toHaveCount(1);
   await expect(page.getByTestId("landing-root")).toBeVisible();
-  await expect(page.getByRole("heading", { level: 1, name: /StackLab/ })).toBeVisible();
+  await expect(
+    page.getByRole("heading", { level: 1, name: /StackLab/ }),
+  ).toBeVisible();
   expect(pageErrors).toEqual([]);
   expect(consoleErrors).toEqual([]);
 });

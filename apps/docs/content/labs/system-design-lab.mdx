@@ -1,0 +1,53 @@
+---
+title: "System Design Lab"
+description: "Understand how StackLab will cover distributed systems and backend architecture through interactive labs."
+---
+
+# System Design Lab
+
+The System Design Lab focuses on how requests move through real distributed systems and how architecture decisions change performance, complexity, and failure behavior.
+
+## Core Topics
+
+- API gateways
+- load balancers
+- service boundaries
+- caches
+- databases
+- queues and workers
+- replicas and sharding
+- rate limiting
+- retries and backpressure
+
+## Example Comparisons
+
+<Tabs>
+  <Tab title="Flow">
+    Model request flow across gateway, cache, service, queue, and database
+    layers.
+  </Tab>
+  <Tab title="Failure">
+    Show timeout, retry amplification, dependency failure, and degraded mode
+    behavior.
+  </Tab>
+  <Tab title="Tradeoffs">
+    Compare correctness, latency, cost, complexity, and operability across
+    design choices.
+  </Tab>
+</Tabs>
+
+## First High-Value Scenarios
+
+- service behind cache and database
+- queue-backed async workflow
+- rate-limited public API
+- read-replica architecture with stale-read risk
+
+## Output Standard
+
+Users should leave with a better answer to:
+
+- why use this component
+- where does it help
+- what operational cost does it add
+- what breaks when traffic or failure increases

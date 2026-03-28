@@ -7,19 +7,19 @@ export default defineConfig({
   reporter: "list",
   use: {
     baseURL: "http://127.0.0.1:3000",
-    trace: "on-first-retry"
+    trace: "on-first-retry",
   },
   projects: [
     {
       name: "chromium",
-      use: { ...devices["Desktop Chrome"] }
-    }
+      use: { ...devices["Desktop Chrome"] },
+    },
   ],
   webServer: {
     command: "pnpm build && pnpm start",
     url: "http://127.0.0.1:3000",
     reuseExistingServer: !process.env.CI,
     stdout: "pipe",
-    stderr: "pipe"
-  }
+    stderr: "pipe",
+  },
 });

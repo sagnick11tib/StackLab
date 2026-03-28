@@ -11,8 +11,7 @@ apps/web/.next
 apps/web/out
 apps/web/playwright-report
 apps/web/test-results
-
-apps/docs/.mint
+apps/docs/.next
 
 .env
 .env.local
@@ -20,3 +19,4 @@ apps/docs/.mint
 .env.test
 !.env.example
 !apps/web/.env.example
+!apps/docs/.env.example

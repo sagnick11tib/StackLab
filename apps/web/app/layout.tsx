@@ -7,14 +7,14 @@ const ibmPlexSans = IBM_Plex_Sans({
   subsets: ["latin"],
   variable: "--font-ibm-plex-sans",
   weight: ["400", "500", "600", "700"],
-  display: "swap"
+  display: "swap",
 });
 
 const ibmPlexMono = IBM_Plex_Mono({
   subsets: ["latin"],
   variable: "--font-ibm-plex-mono",
   weight: ["400", "500", "600"],
-  display: "swap"
+  display: "swap",
 });
 
 type RootLayoutProps = {

@@ -20,7 +20,9 @@ export function SiteFrame({ children }: SiteFrameProps) {
               <span className="font-mono text-[0.7rem] uppercase tracking-[0.24em] text-foreground-muted">
                 Engineering Platform
               </span>
-              <span className="text-sm font-semibold text-foreground">{siteMetadata.name}</span>
+              <span className="text-sm font-semibold text-foreground">
+                {siteMetadata.name}
+              </span>
             </div>
           </div>
           <nav className="flex items-center gap-3 text-sm text-foreground-soft">
@@ -34,7 +36,8 @@ export function SiteFrame({ children }: SiteFrameProps) {
         </header>
         {children}
         <footer className="mt-12 border-t border-border py-6 font-mono text-xs uppercase tracking-[0.18em] text-foreground-muted">
-          Boilerplate foundation for the StackLab landing surface and future product shell.
+          Boilerplate foundation for the StackLab landing surface and future
+          product shell.
         </footer>
       </div>
     </div>
